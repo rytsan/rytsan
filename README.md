@@ -85,57 +85,6 @@ Este perfil funciona como meu **currículo vivo**. Projetos, experimentos e muda
 
 </div>
 
----
-
-## 📼 Experiência & projetos em destaque
-
-### 🧪 Projetos independentes
-
-- **Agente de programação local**  
-  Pipeline com Ollama + FastAPI + SQLite + interface web para automação de código.  
-  _Python, FastAPI, Ollama, SQLite_  
-  [Ver repositório](https://github.com/rytsan/NOME_DO_REPO)
-
-- **Robô com visão computacional**  
-  Navegação em ambiente com OpenCV, Raspberry Pi e sensores.  
-  _Python, OpenCV, Raspberry Pi, sensores_  
-  [Ver repositório](https://github.com/rytsan/NOME_DO_REPO)
-
-- **Sintetizador de voz experimental**  
-  TTS local com modelos quantizados e pipeline de áudio.  
-  _Python, modelos de voz, processamento de áudio_  
-  [Ver repositório](https://github.com/rytsan/NOME_DO_REPO)
-
-### 🎓 Projetos acadêmicos
-
-- **Aprendizado por reforço para navegação**  
-  PPO, A*, geração procedural de labirintos.  
-  _Python, RL, algoritmos de busca_  
-  [Ver repositório](https://github.com/rytsan/NOME_DO_REPO)
-
-- **TCC / Trabalho de conclusão**  
-  [Título do trabalho] – foco em [tema: ex.: IA local, robótica, áudio, etc.].  
-  _Python, LaTeX, ABNT_  
-  [Ver repositório / PDF](https://github.com/rytsan/NOME_DO_REPO)
-
-> Mantenha aqui apenas **3–5 projetos principais**. O restante vive nos repositórios normais e pode ser linkado do site [rytsan.github.io](https://rytsan.github.io/).
-
----
-
-## 🎓 Educação
-
-<!-- Ajuste conforme sua formação real -->
-
-- **[Nome do Curso / Formação]** – [Instituição]  
-  _[Ano de início] – [Ano de conclusão ou “em andamento”]_  
-  - Ênfase em: [ex.: Ciência da Computação, Engenharia de Software, Sistemas Embarcados, etc.]  
-  - TCC / Trabalho de conclusão: **[Título do TCC]** – [breve descrição].
-
-- **Cursos livres / bootcamps**  
-  - [Nome do curso / bootcamp] – [Instituição / Plataforma] – [Ano]  
-  - [Nome do curso / bootcamp] – [Instituição / Plataforma] – [Ano]  
-
----
 
 ## 🎮 Skills por área
 
