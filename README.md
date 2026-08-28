@@ -17,7 +17,7 @@
 
 # 👾Ricardo Takeda
 
-[GitHub](https://github.com/rytsan) · [Portfólio](https://rytsan.github.io/) · [E‑mail](mailto:SEU_EMAIL_AQUI) · [LinkedIn](https://linkedin.com/in/SEU_LINKEDIN_AQUI)
+[GitHub](https://github.com/rytsan) · [Portfólio](https://rytsan.github.io/) 
 
 </div>
 
@@ -116,7 +116,6 @@ Sou cientista e pesquisador em computação, focado em **inteligência artificia
 - 🔭 **Trabalhando em**: [NOME_DO_REPO] – [última atividade]
 - 🌱 **Estudando**: otimização de modelos para GPU com pouca VRAM, pipelines de áudio em tempo real  
 - 🎯 **Foco**: consolidar portfólio em [rytsan.github.io](https://rytsan.github.io/) e integrar com este perfil
-- 
 ---
 ### 📬 Contato
 - **GitHub**: [@rytsan](https://github.com/rytsan)  
