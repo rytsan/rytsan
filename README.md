@@ -114,34 +114,10 @@ Este perfil funciona como meu **currículo vivo**. Projetos, experimentos e muda
 
 ---
 
-## 🧪 O que estou fazendo agora
-
-<!-- Atualize conforme mudar de foco -->
-
-- 🔭 **Trabalhando em**: [ex.: agente de programação local com memória contextual]  
-- 🌱 **Estudando**: [ex.: otimização de modelos para GPU com pouca VRAM, pipelines de áudio em tempo real]  
-- 🎯 **Objetivo atual**: [ex.: consolidar portfólio em rytsan.github.io e integrar com este perfil]  
-
----
-
-## 📈 Currículo vivo
-
-Este perfil é atualizado conforme novos projetos e experimentos surgem:
-
-- Novos repositórios são **pinados** e descritos aqui.  
-- Mudanças de foco (ex.: mais áudio, mais RL, mais Unreal) aparecem em “Sobre mim”, “Interesses” e “O que estou fazendo agora”.  
-- Links para artigos, demos e o site [rytsan.github.io](https://rytsan.github.io/) são adicionados conforme disponíveis.  
-
-Use este README como **fonte da verdade** para o conteúdo que também aparece no seu portfólio.
-
----
-
 ## 📬 Contato
 
 - **GitHub**: [@rytsan](https://github.com/rytsan)  
 - **Portfólio**: [rytsan.github.io](https://rytsan.github.io/)  
-- **E‑mail**: [SEU_EMAIL_AQUI](mailto:SEU_EMAIL_AQUI)  
-- **LinkedIn**: [linkedin.com/in/SEU_LINKEDIN_AQUI](https://linkedin.com/in/SEU_LINKEDIN_AQUI)  
 
 ---
 
