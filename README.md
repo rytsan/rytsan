@@ -71,7 +71,7 @@ Este perfil funciona como meu **currículo vivo**. Projetos, experimentos e muda
 
 ---
 
-## 📊 GitHub Stats (github-stats-extended)
+## 📊 GitHub Stats
 
 <div align="center">
 
