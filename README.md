@@ -113,7 +113,7 @@ Sou cientista e pesquisador em computação, focado em **inteligência artificia
 ---
 ## 🧪 Atualmente
 
-- 🔭 **Trabalhando em**: [NOME_DO_REPO] – [última atividade]
+- 🔭 **Trabalhando em**: [chiptunenode](https://github.com/rytsan/chiptunenode) – ultima atividade hoje
 - 🌱 **Estudando**: otimização de modelos para GPU com pouca VRAM, pipelines de áudio em tempo real  
 - 🎯 **Foco**: consolidar portfólio em [rytsan.github.io](https://rytsan.github.io/) e integrar com este perfil
 ---
