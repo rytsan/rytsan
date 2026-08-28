@@ -2,9 +2,13 @@ name: Update Currently Section
 
 on:
   schedule:
-    # Roda uma vez por hora (ajuste se quiser)
-    - cron: "0 * * * *"
+    # 4x por dia basta: o README so muda quando voce empurra codigo em algum repo
+    - cron: "0 */6 * * *"
   workflow_dispatch:
+
+# o GITHUB_TOKEN nasce somente-leitura; sem isto o "git push" do fim falha
+permissions:
+  contents: write
 
 jobs:
   update:
@@ -13,65 +17,108 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Get latest pushed repo
+      - name: Descobre o repositorio trabalhado mais recentemente
         id: latest
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          # Pega o repositório mais recente com push (qualquer repo do usuário)
-          RESP=$(curl -s -H "Authorization: token $GH_TOKEN" \
-            "https://api.github.com/users/rytsan/repos?sort=pushed&direction=desc&per_page=1")
+          set -euo pipefail
 
-          NAME=$(echo "$RESP" | jq -r '.[0].name')
-          PUSHED_AT=$(echo "$RESP" | jq -r '.[0].pushed_at')
+          RESP=$(curl -sS -H "Authorization: Bearer $GH_TOKEN" \
+            -H "Accept: application/vnd.github+json" \
+            "https://api.github.com/users/${GITHUB_REPOSITORY_OWNER}/repos?sort=pushed&direction=desc&per_page=100")
 
-          # Converte para algo legível (ex.: "rytsan/agent-local – há 2 dias")
-          # Aqui vamos usar apenas o nome e a data ISO; você pode formatar como quiser.
-          echo "repo_name=$NAME" >> "$GITHUB_OUTPUT"
-          echo "pushed_at=$PUSHED_AT" >> "$GITHUB_OUTPUT"
+          # Descarta forks, arquivados e o proprio repo de perfil. O de perfil
+          # precisa sair: este workflow faz commit nele e ele passaria a ser
+          # eternamente o "mais recente", apontando para si mesmo.
+          PICK=$(echo "$RESP" | jq -c --arg me "$GITHUB_REPOSITORY_OWNER" '
+            [ .[]
+              | select(.fork | not)
+              | select(.archived | not)
+              | select(.name != $me)
+            ] | sort_by(.pushed_at) | reverse | .[0] // empty')
 
-      - name: Update README
-        run: |
-          # Substitui a linha que começa com "- 🔭 **Trabalhando em**:"
-          # Mantém o resto do README intacto.
-          python3 - <<'PY'
-import re, os
+          if [ -z "$PICK" ]; then
+            echo "Nenhum repositorio elegivel; mantendo o README como esta."
+            echo "found=no" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
 
-readme_path = "README.md"
-with open(readme_path, "r", encoding="utf-8") as f:
-    content = f.read()
+          {
+            echo "found=yes"
+            echo "repo_name=$(echo "$PICK" | jq -r .name)"
+            echo "repo_url=$(echo "$PICK"  | jq -r .html_url)"
+            echo "pushed_at=$(echo "$PICK" | jq -r .pushed_at)"
+            echo "descr=$(echo "$PICK"     | jq -r '.description // ""')"
+          } >> "$GITHUB_OUTPUT"
 
-repo_name = os.environ["REPO_NAME"]
-pushed_at = os.environ["PUSHED_AT"]
-
-# Monta a linha de "Trabalhando em"
-new_line = f"- 🔭 **Trabalhando em**: [{repo_name}](https://github.com/rytsan/{repo_name}) – última atividade: {pushed_at}"
-
-# Padrão: linha que começa com "- 🔭 **Trabalhando em**:"
-pattern = r"^- 🔭 \*\*Trabalhando em\*\*:.*$"
-
-lines = content.splitlines()
-new_lines = []
-replaced = False
-for line in lines:
-    if not replaced and re.match(pattern, line):
-        new_lines.append(new_line)
-        replaced = True
-    else:
-        new_lines.append(line)
-
-new_content = "\n".join(new_lines)
-
-with open(readme_path, "w", encoding="utf-8") as f:
-    f.write(new_content)
-PY
-
-      - name: Commit and push if changed
-        run: |
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
-          git add README.md
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Update Currently section" && git push)
+      - name: Reescreve a linha "Trabalhando em"
+        if: steps.latest.outputs.found == 'yes'
         env:
           REPO_NAME: ${{ steps.latest.outputs.repo_name }}
+          REPO_URL:  ${{ steps.latest.outputs.repo_url }}
           PUSHED_AT: ${{ steps.latest.outputs.pushed_at }}
+          DESCR:     ${{ steps.latest.outputs.descr }}
+        run: |
+          python3 - <<'PY'
+          import os, re, datetime
+
+          name = os.environ["REPO_NAME"]
+          url = os.environ["REPO_URL"]
+          descr = os.environ.get("DESCR", "").strip()
+          pushed = datetime.datetime.strptime(
+              os.environ["PUSHED_AT"], "%Y-%m-%dT%H:%M:%SZ"
+          ).replace(tzinfo=datetime.timezone.utc)
+
+          days = (datetime.datetime.now(datetime.timezone.utc) - pushed).days
+          if days <= 0:
+              quando = "hoje"
+          elif days == 1:
+              quando = "ontem"
+          elif days < 7:
+              quando = "ha %d dias" % days
+          elif days < 60:
+              quando = "ha %d semanas" % max(1, days // 7)
+          elif days < 365:
+              quando = "ha %d meses" % (days // 30)
+          else:
+              anos = days // 365
+              quando = "ha %d ano%s" % (anos, "" if anos == 1 else "s")
+
+          linha = "- \U0001F52D **Trabalhando em**: [%s](%s)%s – ultima atividade %s" % (
+              name, url, (" — " + descr) if descr else "", quando
+          )
+
+          with open("README.md", encoding="utf-8") as f:
+              content = f.read()
+
+          # ancora no rotulo em negrito, nao no emoji: emoji em regex dentro de
+          # YAML e fonte garantida de dor de cabeca
+          padrao = re.compile(r"^.*\*\*Trabalhando em\*\*:.*$", re.MULTILINE)
+
+          if padrao.search(content):
+              novo = padrao.sub(lambda m: linha, content, count=1)
+          else:
+              print("Linha 'Trabalhando em' nao encontrada; README intacto.")
+              novo = content
+
+          if novo != content:
+              with open("README.md", "w", encoding="utf-8") as f:
+                  f.write(novo)
+              print("Atualizado para:", linha)
+          else:
+              print("Nada a mudar.")
+          PY
+
+      - name: Commita se houve mudanca
+        if: steps.latest.outputs.found == 'yes'
+        run: |
+          if git diff --quiet -- README.md; then
+            echo "README ja estava em dia."
+            exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git commit -m "Atualiza a secao Atualmente"
+          git push
