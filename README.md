@@ -27,7 +27,7 @@
 
 ## 🖥️ Sobre mim
 
-Sou desenvolvedor e pesquisador autodidata, focado em **inteligência artificial local**, **robótica**, **visão computacional**, **áudio** e **jogos/simulação**. Construo protótipos que integram software, hardware e interfaces imersivas, priorizando soluções **locais**, **open source** e de **baixo custo**.
+Sou cientista e pesquisador em computação, focado em **inteligência artificial local**, **robótica**, **visão computacional**, **áudio** e **jogos/simulação**. Construo protótipos que integram software, hardware e interfaces imersivas, priorizando soluções **locais**, **open source** e de **baixo custo**.
 
 - 🧠 **IA local**: agentes de programação, modelos quantizados, Ollama, llama.cpp  
 - 🤖 **Robótica & embarcados**: Arduino, ESP, Raspberry Pi, sensores, visão computacional  
@@ -138,23 +138,6 @@ Este perfil funciona como meu **currículo vivo**. Projetos, experimentos e muda
   - [Nome do curso / bootcamp] – [Instituição / Plataforma] – [Ano]  
 
 ---
-
-## 🏅 Certificações & badges
-
-<!-- Exemplo de como listar badges de cursos/bootcamps -->
-
-<div align="center">
-
-<!-- Substitua pelos links reais dos seus certificados -->
-[<img src="https://hermes.dio.me/tracks/6bb40420-5f89-4902-8df7-3399674d9d84.png" height="60" alt="Bootcamp DIO" />](https://web.dio.me/)
-[<img src="https://img.shields.io/badge/Certificação-Exemplo-9B59B6?style=for-the-badge&logo=certificate&logoColor=white" height="60" alt="Certificação Exemplo" />](https://SEU_CERTIFICADO_AQUI)
-
-</div>
-
-> Use esta seção para badges de bootcamps, cursos, trilhas, GitHub Achievements, etc. Cada imagem pode ser um link para o certificado ou trilha.
-
----
-
 ## 🎮 Skills por área
 
 ### 🧠 Inteligência artificial
@@ -201,16 +184,12 @@ Este perfil é atualizado conforme novos projetos e experimentos surgem:
 - Mudanças de foco (ex.: mais áudio, mais RL, mais Unreal) aparecem em “Sobre mim”, “Interesses” e “O que estou fazendo agora”.  
 - Links para artigos, demos e o site [rytsan.github.io](https://rytsan.github.io/) são adicionados conforme disponíveis.  
 
-Use este README como **fonte da verdade** para o conteúdo que também aparece no seu portfólio.
-
 ---
 
 ## 📬 Contato
 
 - **GitHub**: [@rytsan](https://github.com/rytsan)  
 - **Portfólio**: [rytsan.github.io](https://rytsan.github.io/)  
-- **E‑mail**: [SEU_EMAIL_AQUI](mailto:SEU_EMAIL_AQUI)  
-- **LinkedIn**: [linkedin.com/in/SEU_LINKEDIN_AQUI](https://linkedin.com/in/SEU_LINKEDIN_AQUI)  
 
 ---
 
