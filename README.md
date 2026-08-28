@@ -32,8 +32,6 @@ Sou cientista e pesquisador em computação, focado em **inteligência artificia
 - 🎮 **Jogos & simulação**: Unreal Engine, MetaHuman, Meta Quest, pipelines de áudio  
 - 🎓 **Acadêmico**: aprendizado por reforço (PPO, A*), geração de labirintos, compressão  
 
-Este perfil funciona como meu **currículo vivo**. Projetos, experimentos e mudanças de foco aparecem aqui antes (ou junto) do site [rytsan.github.io](https://rytsan.github.io/).
-
 ---
 
 ## 🕹️ Interesses
