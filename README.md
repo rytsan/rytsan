@@ -8,11 +8,11 @@
 ▄▄▄  ▄▄▄                                                         ▄▄                                        
 ███  ███       ▀▀                                                ██  ██   ▀▀                               
 ███  ███ ████▄ ██ ██ ██ ▄█▀█▄ ████▄ ▄█▀▀▀ ▄███▄   ███▄███▄ ██ ██ ██ ▀██▀▀ ██ ██ ██ ▄█▀█▄ ████▄ ▄█▀▀▀ ▄███▄ 
-███▄▄███ ██ ██ ██ ██▄██ ██▄█▀ ██ ▀▀ ▀███▄ ██ ██   ██ ██ ██ ██ ██ ██  ██   ██ ██▄██ ██▄█▀ ██ ▀▀ ▀███▄ ██ ██ 
+███▄▄███ ██ ██ ██▄██ ██▄█▀ ██ ▀▀ ▀███▄ ██ ██   ██ ██ ██ ██ ██ ██ ██  ██   ██ ██▄██ ██▄█▀ ██ ▀▀ ▀███▄ ██ ██ 
 ▀██████▀ ██ ██ ██▄ ▀█▀  ▀█▄▄▄ ██    ▄▄▄█▀ ▀███▀   ██ ██ ██ ▀██▀█ ██  ██   ██▄ ▀█▀  ▀█▄▄▄ ██    ▄▄▄█▀ ▀███▀ 
                                                                                                            
                                                                                                            
-  > Programaçao -IA local -  Robótica -  Áudio -  Jogos
+  > Programação -  IA local -  Robótica -  Áudio -  Jogos
   > rytsan.github.io
 ```
 
@@ -72,18 +72,18 @@ Este perfil funciona como meu **currículo vivo**. Projetos, experimentos e muda
 
 ---
 
-## 📊 GitHub Stats (tema roxo / terminal)
+## 📊 GitHub Stats (github-stats-extended)
 
 <div align="center">
 
 <!-- Stats card - tema tokyonight (roxo/azul escuro) -->
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=rytsan&show_icons=true&theme=tokyonight&hide_border=true&count_private=true)
+[![rytsan's GitHub stats](https://github-stats-extended.vercel.app/api?username=rytsan&show_icons=true&theme=tokyonight&hide_border=true&count_private=true)](https://github.com/stats-organization/github-stats-extended)
 
 <!-- Top Languages - mesmo tema -->
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=rytsan&layout=compact&theme=tokyonight&hide_border=true)
+[![Top Languages](https://github-stats-extended.vercel.app/api/top-langs/?username=rytsan&layout=compact&theme=tokyonight&hide_border=true)](https://github.com/stats-organization/github-stats-extended)
 
 <!-- Streak stats - tema radical (roxo/rosa) -->
-![Streak Stats](https://streak-stats.demolab.com?user=rytsan&theme=radical&hide_border=true)
+[![Streak Stats](https://streak-stats.demolab.com?user=rytsan&theme=radical&hide_border=true)](https://github.com/DenverCoder1/github-readme-streak-stats)
 
 </div>
 
@@ -138,6 +138,7 @@ Este perfil funciona como meu **currículo vivo**. Projetos, experimentos e muda
   - [Nome do curso / bootcamp] – [Instituição / Plataforma] – [Ano]  
 
 ---
+
 ## 🎮 Skills por área
 
 ### 🧠 Inteligência artificial
@@ -184,12 +185,16 @@ Este perfil é atualizado conforme novos projetos e experimentos surgem:
 - Mudanças de foco (ex.: mais áudio, mais RL, mais Unreal) aparecem em “Sobre mim”, “Interesses” e “O que estou fazendo agora”.  
 - Links para artigos, demos e o site [rytsan.github.io](https://rytsan.github.io/) são adicionados conforme disponíveis.  
 
+Use este README como **fonte da verdade** para o conteúdo que também aparece no seu portfólio.
+
 ---
 
 ## 📬 Contato
 
 - **GitHub**: [@rytsan](https://github.com/rytsan)  
 - **Portfólio**: [rytsan.github.io](https://rytsan.github.io/)  
+- **E‑mail**: [SEU_EMAIL_AQUI](mailto:SEU_EMAIL_AQUI)  
+- **LinkedIn**: [linkedin.com/in/SEU_LINKEDIN_AQUI](https://linkedin.com/in/SEU_LINKEDIN_AQUI)  
 
 ---
 
