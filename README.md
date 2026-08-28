@@ -15,8 +15,7 @@
   > rytsan.github.io
 ```
 
-# 👾 rytsan  
-> **RICARDO TAKEDA** • Desenvolvedor independente
+# 👾Ricardo Takeda
 
 [GitHub](https://github.com/rytsan) · [Portfólio](https://rytsan.github.io/) · [E‑mail](mailto:SEU_EMAIL_AQUI) · [LinkedIn](https://linkedin.com/in/SEU_LINKEDIN_AQUI)
 
