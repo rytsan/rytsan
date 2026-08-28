@@ -113,9 +113,14 @@ Este perfil funciona como meu **currículo vivo**. Projetos, experimentos e muda
 - Linux, Git, automação e scripts  
 
 ---
+## 🧪 Atualmente
 
-## 📬 Contato
-
+- 🔭 **Trabalhando em**: [NOME_DO_REPO] – [última atividade]
+- 🌱 **Estudando**: otimização de modelos para GPU com pouca VRAM, pipelines de áudio em tempo real  
+- 🎯 **Foco**: consolidar portfólio em [rytsan.github.io](https://rytsan.github.io/) e integrar com este perfil
+- 
+---
+### 📬 Contato
 - **GitHub**: [@rytsan](https://github.com/rytsan)  
 - **Portfólio**: [rytsan.github.io](https://rytsan.github.io/)  
 
