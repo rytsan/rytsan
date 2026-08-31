@@ -3,7 +3,7 @@
 <div align="center">
 
 <!-- Banner ASCII estilo terminal (roxo / magenta) -->
-```text
+'''text
 
   _    _       _                            __  __       _ _   _
  | |  | |     (_)                          |  \/  |     | | | (_)
@@ -14,7 +14,7 @@
 
 > Programação -  IA local -  Robótica -  Áudio -  Jogos
 > rytsan.github.io
-```
+'''
 
 # 👾Ricardo Takeda
 
