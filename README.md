@@ -11,9 +11,9 @@
  | |  | | '_ \| \ \ / / _ \ '__/ __|/ _ \  | |\/| | | | | | __| \ \ / / _ \ '__/ __|/ _ \
  | |__| | | | | |\ V /  __/ |  \__ \ (_) | | |  | | |_| | | |_| |\ V /  __/ |  \__ \ (_) |
   \____/|_| |_|_| \_/ \___|_|  |___/\___/  |_|  |_|\__,_|_|\__|_| \_/ \___|_|  |___/\___/
-                                                        
-  > Programação -  IA local -  Robótica -  Áudio -  Jogos
-  > rytsan.github.io
+
+> Programação -  IA local -  Robótica -  Áudio -  Jogos
+> rytsan.github.io
 ```
 
 # 👾Ricardo Takeda
