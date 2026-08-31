@@ -1,8 +1,7 @@
 <!-- README.md do perfil rytsan/rytsan -->
 
-<div align="center">
+<div align="left">
 
-<!-- Banner ASCII estilo terminal (roxo / magenta) -->
 ```text
 
   _    _       _                            __  __       _ _   _
@@ -14,6 +13,7 @@
 
 > Programação -  IA local -  Robótica -  Áudio -  Jogos
 > rytsan.github.io
+
 ```
 
 # 👾Ricardo Takeda
