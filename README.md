@@ -114,7 +114,7 @@ Sou cientista e pesquisador em computação, focado em **inteligência artificia
 ---
 ## 🧪 Atualmente
 
-- 🔭 **Trabalhando em**: [Oikos](https://github.com/rytsan/Oikos) – ultima atividade ontem
+- 🔭 **Trabalhando em**: [Oikos](https://github.com/rytsan/Oikos) – ultima atividade ha 2 dias
 - 🌱 **Estudando**: otimização de modelos para GPU com pouca VRAM, pipelines de áudio em tempo real  
 - 🎯 **Foco**: consolidar portfólio em [rytsan.github.io](https://rytsan.github.io/) e integrar com este perfil
 ---
