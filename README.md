@@ -114,7 +114,7 @@ Sou cientista e pesquisador em computação, focado em **inteligência artificia
 ---
 ## 🧪 Atualmente
 
-- 🔭 **Trabalhando em**: [PE](https://github.com/rytsan/PE) – ultima atividade hoje
+- 🔭 **Trabalhando em**: [PE](https://github.com/rytsan/PE) – ultima atividade ontem
 - 🌱 **Estudando**: otimização de modelos para GPU com pouca VRAM, pipelines de áudio em tempo real  
 - 🎯 **Foco**: consolidar portfólio em [rytsan.github.io](https://rytsan.github.io/) e integrar com este perfil
 ---
