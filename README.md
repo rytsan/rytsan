@@ -114,7 +114,7 @@ Sou cientista e pesquisador em computação, focado em **inteligência artificia
 ---
 ## 🧪 Atualmente
 
-- 🔭 **Trabalhando em**: [apex-tsp](https://github.com/rytsan/apex-tsp) – ultima atividade hoje
+- 🔭 **Trabalhando em**: [apex-tsp](https://github.com/rytsan/apex-tsp) – ultima atividade ontem
 - 🌱 **Estudando**: otimização de modelos para GPU com pouca VRAM, pipelines de áudio em tempo real  
 - 🎯 **Foco**: consolidar portfólio em [rytsan.github.io](https://rytsan.github.io/) e integrar com este perfil
 ---
